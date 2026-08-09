@@ -1,4 +1,4 @@
-# @repobuddy/tersify
+# tersify
 
 ## 4.0.1
 
