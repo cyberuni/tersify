@@ -194,7 +194,7 @@ function tersifyAcornNode(context: TersifyAcornContext, node: AcornNode | null, 
 // istanbul ignore next
 function tersifyUnknown(node: AcornNode, rawString: string) {
 	const nodeType = node.type
-	console.warn(`tersify received unsupported type: ${nodeType}. Please open an issue at https://github.com/unional/tersify/issues
+	console.warn(`tersify received unsupported type: ${nodeType}. Please open an issue at https://github.com/cyberuni/tersify/issues
 node detail:
 ${JSON.stringify(node, undefined, 2)}
 

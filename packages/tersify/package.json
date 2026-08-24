@@ -2,13 +2,13 @@
 	"name": "tersify",
 	"version": "4.0.1",
 	"description": "Creates a terse representation of code",
-	"homepage": "https://github.com/unional/tersify/tree/main/packages/tersify",
+	"homepage": "https://github.com/cyberuni/tersify/tree/main/packages/tersify",
 	"bugs": {
-		"url": "https://github.com/unional/tersify/issues"
+		"url": "https://github.com/cyberuni/tersify/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/unional/tersify.git",
+		"url": "https://github.com/cyberuni/tersify.git",
 		"directory": "packages/tersify"
 	},
 	"license": "MIT",

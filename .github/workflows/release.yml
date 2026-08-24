@@ -5,11 +5,14 @@ on:
 
 jobs:
   code:
-    uses: unional/.github/.github/workflows/pnpm-verify.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@main
     with:
       os: '["ubuntu-latest"]'
 
   release:
-    uses: unional/.github/.github/workflows/pnpm-release-changeset.yml@main
+    uses: cyberuni/.github/.github/workflows/pnpm-release-changeset-oidc.yml@main
     needs: code
-    secrets: inherit
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
