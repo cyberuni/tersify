@@ -1096,12 +1096,12 @@ describe('function', () => {
 			tersify(function () {
 				return !!1
 			})
-		).toBe(`fn() { return true }`)
+		).toBe(`fn() { return !!1 }`)
 		expect(
 			tersify(function () {
 				return +1
 			})
-		).toBe(`fn() { return 1 }`)
+		).toBe(`fn() { return +1 }`)
 	})
 
 	// Can't think of a postfix unary expression. `x++` and `x--` are update expression.
@@ -1112,7 +1112,7 @@ describe('function', () => {
 			tersify(function () {
 				return 1 && 2
 			})
-		).toBe(`fn() { return 2 }`)
+		).toBe(`fn() { return 1 && 2 }`)
 	})
 
 	test('with binary expression', () => {
@@ -2065,12 +2065,12 @@ describe('arrow function', () => {
 			tersify(() => {
 				return !!1
 			})
-		).toBe(`() => true`)
+		).toBe(`() => !!1`)
 		expect(
 			tersify(() => {
 				return +1
 			})
-		).toBe(`() => 1`)
+		).toBe(`() => +1`)
 	})
 
 	// Can't think of a postfix unary expression. `x++` and `x--` are update expression.
@@ -2081,7 +2081,7 @@ describe('arrow function', () => {
 			tersify(() => {
 				return 1 && 2
 			})
-		).toBe(`() => 2`)
+		).toBe(`() => 1 && 2`)
 	})
 
 	test('with binary expression', () => {
