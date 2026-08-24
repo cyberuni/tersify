@@ -384,7 +384,7 @@ export interface TemplateLiteral extends AcornNodeBase {
 	quasis: TemplateElement[]
 }
 
-export interface TemplateElement extends AcornNodeBase {
+interface TemplateElement extends AcornNodeBase {
 	type: 'TemplateElement'
 	value: { raw: string; cooked: string }
 	tail: boolean

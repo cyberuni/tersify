@@ -1,5 +1,4 @@
 {
-	"$schema": "https://unpkg.com/knip@5/schema.json",
-	"ignore": ["./packages/tersify/.storybook/tailwind.css"],
+	"$schema": "https://unpkg.com/knip@6/schema.json",
 	"ignoreDependencies": ["playwright"]
 }
