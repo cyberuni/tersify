@@ -1,5 +1,13 @@
 # tersify
 
+## 4.0.2
+
+### Patch Changes
+
+- 0c11033: Point package metadata at `cyberuni/tersify` — `repository`, `homepage`, `bugs`, and the
+  issue URL printed when an unsupported node type is encountered. `repository` is read when
+  generating provenance, so this has to ship before the first trusted-publishing release.
+
 ## 4.0.1
 
 ### Patch Changes
