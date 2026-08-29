@@ -54,6 +54,9 @@ importers:
         specifier: ^1.0.5
         version: 1.0.5
     devDependencies:
+      '@repobuddy/rolldown-inline-type-exports':
+        specifier: ^1.0.0
+        version: 1.0.0(rolldown@1.2.5)
       '@repobuddy/storybook':
         specifier: ^2.32.0
         version: 2.32.0(@storybook-community/storybook-dark-mode@7.1.3(@storybook/addon-docs@10.5.10(@types/react@19.2.18)(esbuild@0.28.2)(rollup@4.57.1)(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8))(vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0)))(react@19.2.8)(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8)))(@storybook/addon-docs@10.5.10(@types/react@19.2.18)(esbuild@0.28.2)(rollup@4.57.1)(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8))(vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0)))(@types/react@19.2.18)(react@19.2.8)(storybook-addon-tag-badges@3.1.0(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8)))(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8))(typescript@7.0.2)
@@ -111,9 +114,6 @@ importers:
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
-      rolldown:
-        specifier: ^1.2.5
-        version: 1.2.5
       size-limit:
         specifier: ^13.0.3
         version: 13.0.3
@@ -1210,6 +1210,11 @@ packages:
     resolution: {integrity: sha512-dFxQSl+lYZ5Wc9TVUxrSwze9vwC6IBpg4zcbxJkLiZPPnYLX95Zvp9zC+ChPRmc2QpyVzqH4eGnxKzHaVZ1A7Q==}
     peerDependencies:
       '@biomejs/biome': '>= 2'
+
+  '@repobuddy/rolldown-inline-type-exports@1.0.0':
+    resolution: {integrity: sha512-vjyjjn+jNuqqsjjb2ALG3Xn9itWwIeN3lzFc8oC42382E05A95ve6d2cSRkOu5d1gSBnbSHBg8LeWYX4rSWoZg==}
+    peerDependencies:
+      rolldown: '>=1.0.0'
 
   '@repobuddy/storybook@2.32.0':
     resolution: {integrity: sha512-pn37TyfJy4tIk6S4w9AcWszRWIRP1LwFIfCAEEpEpW93J5p92qNT3Q+bnksu9wkq0wMkWR0wuiqCWI1L0l6fKw==}
@@ -3405,10 +3410,6 @@ packages:
     resolution: {integrity: sha512-op4nsTR47R6p0vMUUoYl/a+ljLFVtlfaXkLQmqfLR1qHma1h/ysYk4hEXZ880bf2CYgTskvTa/e196Vd5dDQXw==}
     engines: {node: '>=14.0.0'}
 
-  tinyrainbow@3.1.0:
-    resolution: {integrity: sha512-Bf+ILmBgretUrdJxzXM0SgXLZ3XfiaUuOj/IKQHuTXip+05Xn+uyEYdVg0kYDipTBcLrCVyUzAPz7QmArb0mmw==}
-    engines: {node: '>=14.0.0'}
-
   tinyrainbow@3.1.1:
     resolution: {integrity: sha512-yau8yJdTt989Mm0Bd/236QnzEiPf2xLLTqUZRUJOo/3CB078LSwzei343DgtJVmfJKJE3TMINY1u42SQsP6mXw==}
     engines: {node: '>=14.0.0'}
@@ -3691,18 +3692,6 @@ packages:
 
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
-
-  ws@8.21.0:
-    resolution: {integrity: sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
 
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
@@ -4651,6 +4640,10 @@ snapshots:
     dependencies:
       '@biomejs/biome': 2.5.10
 
+  '@repobuddy/rolldown-inline-type-exports@1.0.0(rolldown@1.2.5)':
+    dependencies:
+      rolldown: 1.2.5
+
   '@repobuddy/storybook@2.32.0(@storybook-community/storybook-dark-mode@7.1.3(@storybook/addon-docs@10.5.10(@types/react@19.2.18)(esbuild@0.28.2)(rollup@4.57.1)(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8))(vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0)))(react@19.2.8)(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8)))(@storybook/addon-docs@10.5.10(@types/react@19.2.18)(esbuild@0.28.2)(rollup@4.57.1)(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8))(vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0)))(@types/react@19.2.18)(react@19.2.8)(storybook-addon-tag-badges@3.1.0(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8)))(storybook@10.5.10(@types/react@19.2.18)(prettier@2.8.8)(react@19.2.8))(typescript@7.0.2)':
     dependencies:
       '@just-web/css': 0.8.3
@@ -5207,9 +5200,9 @@ snapshots:
       magic-string: 0.30.21
       pngjs: 7.0.0
       sirv: 3.0.2
-      tinyrainbow: 3.1.0
+      tinyrainbow: 3.1.1
       vitest: 4.1.11(@types/node@26.2.0)(@vitest/browser-playwright@4.1.11)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1)(vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0))
-      ws: 8.21.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bufferutil
       - msw
@@ -5293,7 +5286,7 @@ snapshots:
     dependencies:
       '@vitest/pretty-format': 4.1.11
       convert-source-map: 2.0.0
-      tinyrainbow: 3.1.0
+      tinyrainbow: 3.1.1
 
   '@webcontainer/env@1.1.1': {}
 
@@ -6600,8 +6593,6 @@ snapshots:
 
   tinyrainbow@2.0.0: {}
 
-  tinyrainbow@3.1.0: {}
-
   tinyrainbow@3.1.1: {}
 
   tinyspy@4.0.4: {}
@@ -6846,8 +6837,6 @@ snapshots:
       strip-ansi: 7.2.0
 
   wrappy@1.0.2: {}
-
-  ws@8.21.0: {}
 
   ws@8.21.3: {}
 
