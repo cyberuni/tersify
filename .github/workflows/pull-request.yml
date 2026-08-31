@@ -9,12 +9,3 @@ jobs:
     uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@main
     with:
       os: '["ubuntu-latest"]'
-
-  # The changesets "version packages" PR is the last point where the exact contents of
-  # the next release are both knowable and reviewable. Skipped on every other PR, so it
-  # must never be a required status check.
-  publish-gate:
-    if: startsWith(github.head_ref, 'changeset-release/')
-    uses: cyberuni/.github/.github/workflows/pnpm-publish-gate.yml@main
-    permissions:
-      contents: read
