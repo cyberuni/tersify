@@ -1,5 +1,11 @@
 # tersify
 
+## 4.0.3
+
+### Patch Changes
+
+- 2bb4e84: Raise the minimum `acorn` version to `8.18.0`.
+
 ## 4.0.2
 
 ### Patch Changes
