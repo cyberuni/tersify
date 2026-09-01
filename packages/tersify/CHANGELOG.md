@@ -1,5 +1,11 @@
 # tersify
 
+## 4.0.6
+
+### Patch Changes
+
+- e33ca2a: Update `unpartial` to ^1.0.7.
+
 ## 4.0.5
 
 ### Patch Changes
