@@ -75,7 +75,6 @@
 	},
 	"dependencies": {
 		"acorn": "^8.18.0",
-		"is-buffer": "^2.0.5",
 		"unpartial": "^1.0.5"
 	},
 	"devDependencies": {
