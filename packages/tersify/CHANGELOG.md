@@ -1,5 +1,11 @@
 # tersify
 
+## 4.0.4
+
+### Patch Changes
+
+- 453ba40: Fix circular dependency between `tersify` and `tersifyFunction` modules.
+
 ## 4.0.3
 
 ### Patch Changes
