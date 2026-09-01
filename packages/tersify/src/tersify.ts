@@ -19,6 +19,7 @@ export function tersify(obj: any, options?: Partial<TersifyOptions>): string {
 	const context = required<TersifyContext>(defaultOptions, options, {
 		path: [],
 		references: [],
+		defaultTersify,
 		...(options?.indent === 'tab' || typeof options?.indent === 'number' ? { indentDepth: 0 } : {})
 	})
 	return tersifyValue(context, obj, context.maxLength)
@@ -119,7 +120,7 @@ function tersifyArray(context: TersifyContext, value: any[], length: number) {
 
 	context.references.push({ value, path: context.path })
 
-	if (!context.raw && hasTersifyFn(value) && value.tersify !== defaultTersify) {
+	if (!context.raw && hasTersifyFn(value) && value.tersify !== context.defaultTersify) {
 		return value.tersify({ maxLength: length })
 	}
 
@@ -160,7 +161,7 @@ function tersifyObject(context: TersifyContext, value: object, length: number) {
 
 	context.references.push({ value, path: context.path })
 
-	if (!context.raw && hasTersifyFn(value) && value.tersify !== defaultTersify) {
+	if (!context.raw && hasTersifyFn(value) && value.tersify !== context.defaultTersify) {
 		return value.tersify({ maxLength: length })
 	}
 
@@ -210,7 +211,7 @@ function tersifyInstance(context: TersifyContext, value: object, length: number)
 
 	context.references.push({ value, path: context.path })
 
-	if (!context.raw && hasTersifyFn(value) && value.tersify !== defaultTersify) {
+	if (!context.raw && hasTersifyFn(value) && value.tersify !== context.defaultTersify) {
 		return value.tersify({ maxLength: length })
 	}
 

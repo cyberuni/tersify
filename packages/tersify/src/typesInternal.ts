@@ -6,4 +6,6 @@ export type TersifyContext = TersifyOptions & {
 	references: { value: any; path: (keyof any)[] }[]
 	/** Used when indent === 'tab' for nested depth. */
 	indentDepth?: number
+	/** Reference to defaultTersify to avoid circular imports. */
+	defaultTersify: (this: any, options?: Partial<TersifyOptions>) => string
 }
