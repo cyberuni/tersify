@@ -1,7 +1,7 @@
-import isBuffer from 'is-buffer'
 import { required } from 'unpartial'
 import { defaultOptions } from './constants.js'
 import { hasTersifyFn } from './hasTersifyFn.js'
+import { isBuffer } from './isBuffer.js'
 import { tersifyFunction } from './tersifyFunction.js'
 import { trim } from './trim.js'
 import type { TersifyOptions } from './types.js'
