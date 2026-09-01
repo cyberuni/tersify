@@ -1,5 +1,13 @@
 # tersify
 
+## 4.0.5
+
+### Patch Changes
+
+- b46f029: Replace the CJS-only `is-buffer` dependency with an inlined duck-typed check.
+  
+  `is-buffer@2` ships only CommonJS, which broke consumers importing the ESM build in strict ESM environments. The check is three lines and has no Node dependency, so it now lives in `src/isBuffer.ts` and works in both Node and the browser. `tersify` no longer has `is-buffer` as a runtime dependency.
+
 ## 4.0.4
 
 ### Patch Changes
