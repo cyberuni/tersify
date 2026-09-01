@@ -75,7 +75,7 @@
 	},
 	"dependencies": {
 		"acorn": "^8.18.0",
-		"unpartial": "^1.0.5"
+		"unpartial": "^1.0.7"
 	},
 	"devDependencies": {
 		"@repobuddy/rolldown-inline-type-exports": "^1.0.0",
