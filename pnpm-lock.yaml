@@ -24,8 +24,8 @@ importers:
         specifier: ^21.2.2
         version: 21.2.2
       '@repobuddy/biome':
-        specifier: 2.3.1
-        version: 2.3.1(@biomejs/biome@2.5.10)
+        specifier: 2.4.0
+        version: 2.4.0(@biomejs/biome@2.5.10)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -1744,8 +1744,8 @@ packages:
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
-  '@repobuddy/biome@2.3.1':
-    resolution: {integrity: sha512-dFxQSl+lYZ5Wc9TVUxrSwze9vwC6IBpg4zcbxJkLiZPPnYLX95Zvp9zC+ChPRmc2QpyVzqH4eGnxKzHaVZ1A7Q==}
+  '@repobuddy/biome@2.4.0':
+    resolution: {integrity: sha512-YdMjhey4Y9XzDR1cOIFFNBr6O+87TkFA1pViDFEFFryYKUdJ3qN/yZpCgcL1exZsuGDxC+0540hmJmtl9wKBQQ==}
     peerDependencies:
       '@biomejs/biome': '>= 2'
 
@@ -7036,7 +7036,7 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@repobuddy/biome@2.3.1(@biomejs/biome@2.5.10)':
+  '@repobuddy/biome@2.4.0(@biomejs/biome@2.5.10)':
     dependencies:
       '@biomejs/biome': 2.5.10
 
