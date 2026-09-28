@@ -1,5 +1,11 @@
 # tersify
 
+## 4.0.8
+
+### Patch Changes
+
+- 776f60c: Update `unpartial` to `^1.0.8`.
+
 ## 4.0.7
 
 ### Patch Changes
