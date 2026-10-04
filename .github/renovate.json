@@ -18,6 +18,12 @@
 			"automerge": false
 		},
 		{
+			"description": "astro check cannot run on TypeScript 7 yet (no programmatic API); hold the website on TS 6 until Astro supports it.",
+			"matchFileNames": ["apps/website/package.json"],
+			"matchPackageNames": ["typescript"],
+			"allowedVersions": "<7"
+		},
+		{
 			"description": "@types/node tracks the supported Node range, so bumps are a deliberate call.",
 			"matchPackageNames": ["@types/node"],
 			"automerge": false
