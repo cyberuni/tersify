@@ -253,11 +253,11 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(typescript@7.0.2)
       '@size-limit/esbuild-why':
-        specifier: ^13.0.3
-        version: 13.0.3(size-limit@13.0.3)
+        specifier: ^14.0.0
+        version: 14.2.0(size-limit@14.2.0)
       '@size-limit/preset-small-lib':
-        specifier: ^13.0.3
-        version: 13.0.3(size-limit@13.0.3)
+        specifier: ^14.0.0
+        version: 14.2.0(size-limit@14.2.0)
       '@storybook-community/storybook-dark-mode':
         specifier: ^7.1.3
         version: 7.1.3(@storybook/addon-docs@10.5.10(@types/react@19.2.18)(esbuild@0.28.2)(rollup@4.63.1)(storybook@10.5.10(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8))(vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0)))(react@19.2.8)(storybook@10.5.10(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8))
@@ -307,8 +307,8 @@ importers:
         specifier: ^6.1.3
         version: 6.1.3
       size-limit:
-        specifier: ^13.0.3
-        version: 13.0.3
+        specifier: ^14.0.0
+        version: 14.2.0
       storybook:
         specifier: ^10.5.10
         version: 10.5.10(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8)
@@ -2332,28 +2332,28 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@size-limit/esbuild-why@13.0.3':
-    resolution: {integrity: sha512-8HMAyL2lTvUieCmtP2KJSF7oeVH2yN8s/dZAwJiCX28VkNUvAzhpnZEBUCZypvSLuhG5zEkkktU4Nf9cPNLEBw==}
-    engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
+  '@size-limit/esbuild-why@14.2.0':
+    resolution: {integrity: sha512-I9ZJ0uUo8XBmMAE7/sYDW0gTHTHa9l/uhScK+/TDHcQB1sN0zdeyyn8Iz9ldBBI0raMWRV+yP0wkeg4jHApcTA==}
+    engines: {node: ^22.19.0 || ^24.5.0 || >=26.0.0}
     peerDependencies:
-      size-limit: 13.0.3
+      size-limit: 14.2.0
 
-  '@size-limit/esbuild@13.0.3':
-    resolution: {integrity: sha512-g24wsTxM3N/SaGv1MiiDjTShNrIna1WCNJ7NXMrlsWBHWv1OL0nCyllR1bDDHf+gV41lF7QxX7vknswoOr71DQ==}
-    engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
+  '@size-limit/file@14.2.0':
+    resolution: {integrity: sha512-ROqMjC8Pi/ogIIm79Y4u8YieXJb++MaZWbdv/am16l4cS9CxSUXmqP3igIXyv3gK3LMG6DkZdWSM5KVND2ug7g==}
+    engines: {node: ^22.19.0 || ^24.5.0 || >=26.0.0}
     peerDependencies:
-      size-limit: 13.0.3
+      size-limit: 14.2.0
 
-  '@size-limit/file@13.0.3':
-    resolution: {integrity: sha512-PWTITIXH5p9aGIf6qq2Fruihn/b9nBQyfkyoAyb6DzFJgS1Ek9MSPJYKxKFLO8jdo0aqSgBPd3sevbS6PyBiJw==}
-    engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
+  '@size-limit/preset-small-lib@14.2.0':
+    resolution: {integrity: sha512-OG0U91dv2eyMIjwnrM+FX37GgpDbLHFScIE30/dQhIK1fcw7LtEhIxPzugScJlwEAIpD/d+r9xCQHkEZEDQiyw==}
     peerDependencies:
-      size-limit: 13.0.3
+      size-limit: 14.2.0
 
-  '@size-limit/preset-small-lib@13.0.3':
-    resolution: {integrity: sha512-rqKn1+JkVF5ckZRmcxeQPZ8g0e9Fqddh6bjmDotijXJtN40KJQ+5TG6pTiYq3RaA4nkuEkixHULpDBGcgAARAg==}
+  '@size-limit/rolldown@14.2.0':
+    resolution: {integrity: sha512-FA4DMpy/q8BE/gtGvV0hV2MVR03hPF/PwKxJoB1LUjyj6FnksVGpxuxyh0ZU1eSdrtj6tgFR67NDIcZ9fCGV/A==}
+    engines: {node: ^22.19.0 || ^24.5.0 || >=26.0.0}
     peerDependencies:
-      size-limit: 13.0.3
+      size-limit: 14.2.0
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -3235,10 +3235,6 @@ packages:
   bundle-name@4.1.0:
     resolution: {integrity: sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==}
     engines: {node: '>=18'}
-
-  bytes-iec@3.1.1:
-    resolution: {integrity: sha512-fey6+4jDK7TFtFg/klGSvNKJctyU7n2aQdnM+CO0ruLPbqqMOM8Tio0Pc+deqUeVKX1tL5DQep1zQ7+37aTAsA==}
-    engines: {node: '>= 0.8'}
 
   cac@7.0.0:
     resolution: {integrity: sha512-tixWYgm5ZoOD+3g6UTea91eow5z6AAHaho3g0V9CNSNb45gM8SmflpAc+GRd1InC4AqN/07Unrgp56Y94N9hJQ==}
@@ -4491,11 +4487,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@6.0.1:
-    resolution: {integrity: sha512-3wVS3i51pE2pi1k5FFL/95BGfVS0kSsvDVuGXHOtxox/TywUmtgq+3qiTOTbs9J7KfHaXPiN171k/A6dBnaXFw==}
-    engines: {node: ^22 || ^24 || >=26}
-    hasBin: true
-
   nanospinner@1.2.2:
     resolution: {integrity: sha512-Zt/AmG6qRU3e+WnzGGLuMCEAO/dAu45stNbHY223tUxldaDAeE+FxSPsd9Q+j+paejmm0ZbrNVs5Sraqy3dRxA==}
 
@@ -4563,8 +4554,8 @@ packages:
     resolution: {integrity: sha512-YgBpdJHPyQ2UE5x+hlSXcnejzAvD0b22U2OuAP+8OnlJT+PjWPxtgmGqKKc+RgTM63U9gN0YzrYc71R2WT/hTA==}
     engines: {node: '>=18'}
 
-  open@11.0.2:
-    resolution: {integrity: sha512-RWqF+pBSkqecEvCKOn8QYhaNdRMJDZRIrlS/7rTDdLHaPcfXGCZ/h8zb413NfvdeAV0MR7T1yJcA34/q+CSm1Q==}
+  open@11.0.4:
+    resolution: {integrity: sha512-++Zlftm0kVLPmzC06t6epuWmcRMDbI4z5P3NNX979WA/k23+NtSOynEGzsVfZwguKw2mi5umVgnBlJQMwRz4Pg==}
     engines: {node: '>=20'}
 
   open@8.4.2:
@@ -5035,9 +5026,9 @@ packages:
     engines: {node: '>=20.19.5', npm: '>=10.8.2'}
     hasBin: true
 
-  size-limit@13.0.3:
-    resolution: {integrity: sha512-KVb2aNEU49BwTR21SVjD+2QHP9gBV/nWsTHzNB/heRwXtHyA7lLQiDZDQ1TiNh/B/TZXKAZrHYyTt+cvBUrzYw==}
-    engines: {node: ^22.18.0 || ^24.0.0 || >=26.0.0}
+  size-limit@14.2.0:
+    resolution: {integrity: sha512-/h8+T+2TxSdZhKRv70gtjAfMKK72p6+FEJMqEZHjzbLXfACF6esikRT8aHqmVLQvT+9lNlAa8GOAVFC3XeI1VA==}
+    engines: {node: ^22.19.0 || ^24.5.0 || >=26.0.0}
     hasBin: true
 
   smol-toml@1.8.0:
@@ -7551,27 +7542,26 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@size-limit/esbuild-why@13.0.3(size-limit@13.0.3)':
+  '@size-limit/esbuild-why@14.2.0(size-limit@14.2.0)':
     dependencies:
       esbuild-visualizer: 0.7.0
-      open: 11.0.2
-      size-limit: 13.0.3
+      open: 11.0.4
+      size-limit: 14.2.0
 
-  '@size-limit/esbuild@13.0.3(size-limit@13.0.3)':
+  '@size-limit/file@14.2.0(size-limit@14.2.0)':
     dependencies:
-      esbuild: 0.28.2
-      nanoid: 6.0.1
-      size-limit: 13.0.3
+      size-limit: 14.2.0
 
-  '@size-limit/file@13.0.3(size-limit@13.0.3)':
+  '@size-limit/preset-small-lib@14.2.0(size-limit@14.2.0)':
     dependencies:
-      size-limit: 13.0.3
+      '@size-limit/file': 14.2.0(size-limit@14.2.0)
+      '@size-limit/rolldown': 14.2.0(size-limit@14.2.0)
+      size-limit: 14.2.0
 
-  '@size-limit/preset-small-lib@13.0.3(size-limit@13.0.3)':
+  '@size-limit/rolldown@14.2.0(size-limit@14.2.0)':
     dependencies:
-      '@size-limit/esbuild': 13.0.3(size-limit@13.0.3)
-      '@size-limit/file': 13.0.3(size-limit@13.0.3)
-      size-limit: 13.0.3
+      rolldown: 1.2.12
+      size-limit: 14.2.0
 
   '@standard-schema/spec@1.1.0': {}
 
@@ -8426,8 +8416,6 @@ snapshots:
     dependencies:
       run-applescript: 7.1.0
 
-  bytes-iec@3.1.1: {}
-
   cac@7.0.0: {}
 
   callsites@3.1.0: {}
@@ -8736,7 +8724,7 @@ snapshots:
   esbuild-visualizer@0.7.0:
     dependencies:
       open: 8.4.2
-      picomatch: 4.0.5
+      picomatch: 4.0.7
       yargs: 17.7.3
 
   esbuild@0.28.2:
@@ -9980,8 +9968,6 @@ snapshots:
 
   nanoid@3.3.18: {}
 
-  nanoid@6.0.1: {}
-
   nanospinner@1.2.2:
     dependencies:
       picocolors: 1.1.1
@@ -10053,7 +10039,7 @@ snapshots:
       is-inside-container: 1.0.0
       wsl-utils: 0.1.0
 
-  open@11.0.2:
+  open@11.0.4:
     dependencies:
       default-browser: 5.5.1
       define-lazy-prop: 3.0.0
@@ -10772,9 +10758,8 @@ snapshots:
       arg: 5.0.2
       sax: 1.6.1
 
-  size-limit@13.0.3:
+  size-limit@14.2.0:
     dependencies:
-      bytes-iec: 3.1.1
       lilconfig: 3.1.3
       nanospinner: 1.2.2
 
