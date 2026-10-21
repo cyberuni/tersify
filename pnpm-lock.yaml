@@ -322,8 +322,8 @@ importers:
         specifier: ^0.23.0
         version: 0.23.0(@volar/typescript@2.4.28(typescript@7.0.2))(oxc-resolver@11.24.2)(typescript@7.0.2)
       type-plus:
-        specifier: 8.0.0
-        version: 8.0.0(typescript@7.0.2)
+        specifier: 8.0.1
+        version: 8.0.1(typescript@7.0.2)
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -5343,15 +5343,6 @@ packages:
     resolution: {integrity: sha512-yQfwQVoRXwOuyX1LxiJFBFNg6VfuYh+/RyZLd82+isgyLkBXw3S5XRRzvcck1FAjSCG5sVyLd+O1eDMvYa3J7g==}
     hasBin: true
 
-  type-plus@8.0.0:
-    resolution: {integrity: sha512-wYKemYpT2XPgZyqZUvo6pT0ZiwWHcLJMyR68ZjY4IB96ozUpxrb6M7pj9xYzNcBHWG4r17WqXnkGRQZrHAWs7A==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    peerDependencies:
-      typescript: '>= 5.4.0'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   type-plus@8.0.0-beta.10:
     resolution: {integrity: sha512-ZdhzmQg7f8oxt5Cbivslk8o3zef8L3ibpKIeGH1ESf73y8ZEY1z9fe4Z3fTxcjmFOb8ESE1TbW/MCgEvpeLC4w==}
     peerDependencies:
@@ -5361,6 +5352,15 @@ packages:
     resolution: {integrity: sha512-isf19V90L8JOn9VBWWwUfH8DU6G3dfPptr3R+JtraYWHqLAsXYI2f9x1HZVTkajrkSffdEbetXUXf7FcIjSIRg==}
     peerDependencies:
       typescript: '>= 5.4.0'
+
+  type-plus@8.0.1:
+    resolution: {integrity: sha512-x1OtyTGuqmmnNu5+iL93KVsHLl6PMeRWUDN8yz+X4f86TuEcXSzX7EAdBK+3CFSp2jyVnQuzvof1Z/3Noc3Dig==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      typescript: '>= 5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   typesafe-path@0.2.2:
     resolution: {integrity: sha512-OJabfkAg1WLZSqJAJ0Z6Sdt3utnbzr/jh+NAHoyWHJe8CMSy79Gm085094M9nvTPy22KzTVn5Zq5mbapCI/hPA==}
@@ -11135,12 +11135,6 @@ snapshots:
       '@turbo/windows-64': 2.10.11
       '@turbo/windows-arm64': 2.10.11
 
-  type-plus@8.0.0(typescript@7.0.2):
-    dependencies:
-      unpartial: 1.0.8
-    optionalDependencies:
-      typescript: 7.0.2
-
   type-plus@8.0.0-beta.10(typescript@7.0.2):
     dependencies:
       tersify: 4.0.6
@@ -11152,6 +11146,12 @@ snapshots:
       tersify: 4.0.6
       typescript: 7.0.2
       unpartial: 1.0.8
+
+  type-plus@8.0.1(typescript@7.0.2):
+    dependencies:
+      unpartial: 1.0.8
+    optionalDependencies:
+      typescript: 7.0.2
 
   typesafe-path@0.2.2: {}
 
