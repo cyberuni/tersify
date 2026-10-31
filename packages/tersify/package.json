@@ -56,7 +56,8 @@
 		"cjs",
 		"esm",
 		"src",
-		"!**/*.{spec,test,unit,accept,integrate,system,stories}.*"
+		"!**/*.{spec,test,unit,accept,integrate,system,stories}.*",
+		"CHANGELOG.md"
 	],
 	"scripts": {
 		"build": "tsdown",
