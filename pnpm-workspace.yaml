@@ -69,3 +69,5 @@ minimumReleaseAgeExclude:
   - vite@8.2.4
   # Renovate security update: storybook@10.6.2
   - storybook@10.6.2
+  # Renovate security update: @storybook/addon-vitest@10.6.2
+  - "@storybook/addon-vitest@10.6.2"
