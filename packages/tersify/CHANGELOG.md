@@ -1,5 +1,11 @@
 # tersify
 
+## 4.0.9
+
+### Patch Changes
+
+- ee76a76: Include `CHANGELOG.md` in the published package.
+
 ## 4.0.8
 
 ### Patch Changes
