@@ -11,7 +11,7 @@
 		"typecheck": "astro check"
 	},
 	"dependencies": {
-		"@astrojs/starlight": "^0.41.3",
+		"@astrojs/starlight": "^0.42.0",
 		"@fontsource-variable/inter": "^5.2.8",
 		"astro": "^7.1.3"
 	},
