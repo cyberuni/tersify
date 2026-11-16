@@ -96,7 +96,7 @@
 		"@vitest/browser-playwright": "4.1.12",
 		"@vitest/coverage-v8": "^4.1.11",
 		"dedent": "^1.7.2",
-		"jsdom": "^30.0.1",
+		"jsdom": "^31.0.0",
 		"npm-run-all2": "^9.0.3",
 		"playwright": "^1.62.1",
 		"react": "^19.2.8",
