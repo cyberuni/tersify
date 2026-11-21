@@ -93,7 +93,7 @@
 		"@tailwindcss/vite": "^4.3.3",
 		"@types/react": "^19.2.18",
 		"@types/ws": "^8.18.1",
-		"@vitest/browser-playwright": "5.1.0",
+		"@vitest/browser-playwright": "5.1.1",
 		"@vitest/coverage-v8": "^5.0.0",
 		"dedent": "^1.7.2",
 		"jsdom": "^31.0.0",
